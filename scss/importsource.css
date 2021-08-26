@@ -12,8 +12,7 @@ html {
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
+  /* 2 */ }
 
 body,
 div,
@@ -44,16 +43,14 @@ select,
 textarea,
 button {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 dl,
 ul,
 ol,
 menu,
 li {
-  list-style: none;
-}
+  list-style: none; }
 
 /* Sections
    ========================================================================== */
@@ -61,15 +58,13 @@ li {
  * Remove the margin in all browsers.
  */
 body {
-  margin: 0;
-}
+  margin: 0; }
 
 /**
  * Render the `main` element consistently in IE.
  */
 main {
-  display: block;
-}
+  display: block; }
 
 /* Grouping content
    ========================================================================== */
@@ -84,8 +79,7 @@ hr {
   height: 0;
   /* 1 */
   overflow: visible;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
@@ -95,8 +89,7 @@ pre {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
-  /* 2 */
-}
+  /* 2 */ }
 
 /* Text-level semantics
    ========================================================================== */
@@ -107,8 +100,7 @@ a {
   list-style: none;
   color: #1a1a1a;
   background-color: transparent;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 /**
  * 1. Remove the bottom border in Chrome 57-
@@ -121,16 +113,14 @@ abbr[title] {
   /* 2 */
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
 b,
 strong {
-  font-weight: bolder;
-}
+  font-weight: bolder; }
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
@@ -142,15 +132,13 @@ samp {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Add the correct font size in all browsers.
  */
 small {
-  font-size: 80%;
-}
+  font-size: 80%; }
 
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
@@ -161,16 +149,13 @@ sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 sub {
-  bottom: -0.25em;
-}
+  bottom: -0.25em; }
 
 sup {
-  top: -0.5em;
-}
+  top: -0.5em; }
 
 /* Embedded content
    ========================================================================== */
@@ -178,8 +163,7 @@ sup {
  * Remove the border on images inside links in IE 10.
  */
 img {
-  border-style: none;
-}
+  border-style: none; }
 
 /* Forms
    ========================================================================== */
@@ -199,8 +183,7 @@ textarea {
   line-height: 1.15;
   /* 1 */
   margin: 0;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Show the overflow in IE.
@@ -209,8 +192,7 @@ textarea {
 button,
 input {
   /* 1 */
-  overflow: visible;
-}
+  overflow: visible; }
 
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
@@ -219,12 +201,10 @@ input {
 button,
 select {
   /* 1 */
-  text-transform: none;
-}
+  text-transform: none; }
 
 button:focus {
-  outline: none;
-}
+  outline: none; }
 
 /**
  * Correct the inability to style clickable types in iOS and Safari.
@@ -235,8 +215,7 @@ button,
 [type="submit"] {
   -webkit-appearance: button;
   border: none;
-  background: transparent;
-}
+  background: transparent; }
 
 /**
  * Remove the inner border and padding in Firefox.
@@ -246,8 +225,7 @@ button::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
   border-style: none;
-  padding: 0;
-}
+  padding: 0; }
 
 /**
  * Restore the focus styles unset by the previous rule.
@@ -256,15 +234,13 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
+  outline: 1px dotted ButtonText; }
 
 /**
  * Correct the padding in Firefox.
  */
 fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
+  padding: 0.35em 0.75em 0.625em; }
 
 /**
  * 1. Correct the text wrapping in Edge and IE.
@@ -285,22 +261,19 @@ legend {
   padding: 0;
   /* 3 */
   white-space: normal;
-  /* 1 */
-}
+  /* 1 */ }
 
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 progress {
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 /**
  * Remove the default vertical scrollbar in IE 10+.
  */
 textarea {
-  overflow: auto;
-}
+  overflow: auto; }
 
 /**
  * 1. Add the correct box sizing in IE 10.
@@ -312,16 +285,14 @@ textarea {
           box-sizing: border-box;
   /* 1 */
   padding: 0;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
+  height: auto; }
 
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
@@ -331,15 +302,13 @@ textarea {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
 [type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
+  -webkit-appearance: none; }
 
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
@@ -349,8 +318,7 @@ textarea {
   -webkit-appearance: button;
   /* 1 */
   font: inherit;
-  /* 2 */
-}
+  /* 2 */ }
 
 /* Interactive
   ========================================================================== */
@@ -358,15 +326,13 @@ textarea {
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
 details {
-  display: block;
-}
+  display: block; }
 
 /*
  * Add the correct display in all browsers.
  */
 summary {
-  display: list-item;
-}
+  display: list-item; }
 
 /* Misc
    ========================================================================== */
@@ -374,124 +340,97 @@ summary {
  * Add the correct display in IE 10+.
  */
 template {
-  display: none;
-}
+  display: none; }
 
 /**
  * Add the correct display in IE 10.
  */
 [hidden] {
-  display: none;
-}
+  display: none; }
 
 figure {
-  margin: 0;
-}
+  margin: 0; }
 
 /* Base */
 .fc-primary {
-  color: #ff4f42;
-}
+  color: #ff4f42; }
 
 .bg-primary {
-  background-color: #ff4f42;
-}
+  background-color: #ff4f42; }
 
 .fc-red {
-  color: #ee3d30;
-}
+  color: #ee3d30; }
 
 .bg-red {
-  background-color: #ee3d30;
-}
+  background-color: #ee3d30; }
 
 .fc-white {
-  color: #fff;
-}
+  color: #fff; }
 
 .bg-white {
-  background-color: #fff;
-}
+  background-color: #fff; }
 
 .fc-very-light-grey {
-  color: #dddddd;
-}
+  color: #dddddd; }
 
 .bg-very-light-grey {
-  background-color: #dddddd;
-}
+  background-color: #dddddd; }
 
 .fc-light-grey {
-  color: #f8f8f8;
-}
+  color: #f8f8f8; }
 
 .bg-light-grey {
-  background-color: #f8f8f8;
-}
+  background-color: #f8f8f8; }
 
 .fc-midium-grey {
-  color: #999999;
-}
+  color: #999999; }
 
 .bg-midium-grey {
-  background-color: #999999;
-}
+  background-color: #999999; }
 
 .fc-grey {
-  color: #555555;
-}
+  color: #555555; }
 
 .bg-grey {
-  background-color: #555555;
-}
+  background-color: #555555; }
 
 .fc-dark-grey {
-  color: #333333;
-}
+  color: #333333; }
 
 .bg-dark-grey {
-  background-color: #333333;
-}
+  background-color: #333333; }
 
 .fc-black {
-  color: #000;
-}
+  color: #000; }
 
 .bg-black {
-  background-color: #000;
-}
+  background-color: #000; }
 
 /* font color */
 /* background-color */
 .bg-n {
-  background: none !important;
-}
+  background: none !important; }
 
 .bg-transparent {
-  background-color: transparent;
-}
+  background-color: transparent; }
 
 /* Layout */
 body {
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
 #app {
-  text-align: center;
-}
+  text-align: center; }
 
 .c2 {
-  height: 400px;
-}
+  height: 400px; }
 
 .sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 100%;
-  height: 100vh;
-}
+  height: 100vh; }
 
 .slide-container {
   position: relative;
@@ -505,18 +444,15 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
 .slide {
   position: absolute;
   display: none;
-  z-index: 0;
-}
+  z-index: 0; }
 
 .slide.enabled {
-  display: block;
-}
+  display: block; }
 
 .slide-big-text p {
   margin: 0;
@@ -525,18 +461,15 @@ body {
   line-height: 1.35;
   letter-spacing: -1.5px;
   word-spacing: 1.5px;
-  text-align: center;
-}
+  text-align: center; }
 
 .slide-small-text {
   margin-top: 20px;
-  margin-left: 5px;
-}
+  margin-left: 5px; }
 
 .slide-small-text p {
   font-size: 18px;
-  margin: 0;
-}
+  margin: 0; }
 
 .scdown {
   position: absolute;
@@ -544,30 +477,740 @@ body {
   width: 100%;
   height: 50px;
   text-align: center;
-  bottom: 0px;
-}
+  bottom: 0px; }
 
+html {
+  font-size: 14px; }
+
+#header, #footer {
+  position: fixed;
+  width: 100%; }
+  #header .inner, #footer .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 94%;
+    height: 100%;
+    margin: 0 auto; }
+  #header .logo a, #footer .logo a {
+    display: inline-block;
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    position: relative;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 4px; }
+    #header .logo a .logoImg, #footer .logo a .logoImg {
+      width: 165px;
+      height: 63px;
+      background: url(../images/common/site-logo_w.png) center no-repeat;
+      background-size: contain;
+      font-size: 0;
+      text-indent: -9999px; }
+  #header .menu, #footer .menu {
+    margin-left: auto; }
+    #header .menu ul, #footer .menu ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      #header .menu ul li, #footer .menu ul li {
+        margin: 0 16px;
+        font-size: 1.286em; }
+  #header .lang .depth, #footer .lang .depth {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: white;
+    background: #C06162;
+    background: #34495e;
+    position: relative;
+    font-size: 1.286em;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+    z-index: 100; }
+    #header .lang .depth .dropdown_menu, #footer .lang .depth .dropdown_menu {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      -webkit-perspective: 1000px;
+              perspective: 1000px;
+      z-index: -1; }
+      #header .lang .depth .dropdown_menu li, #footer .lang .depth .dropdown_menu li {
+        display: none;
+        color: white;
+        background: #34495e;
+        font-size: 0.8em;
+        padding: 10px 8px;
+        opacity: 0; }
+        #header .lang .depth .dropdown_menu li:hover, #footer .lang .depth .dropdown_menu li:hover {
+          background: #2980b9; }
+    #header .lang .depth .dropdown_menu--animated, #footer .lang .depth .dropdown_menu--animated {
+      display: none; }
+      #header .lang .depth .dropdown_menu--animated li, #footer .lang .depth .dropdown_menu--animated li {
+        display: block;
+        opacity: 1; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-1, #footer .lang .depth .dropdown_menu-3 .dropdown_item-1 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: rotateZ 300ms 80ms ease-in-out forwards;
+              animation: rotateZ 300ms 80ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-2, #footer .lang .depth .dropdown_menu-3 .dropdown_item-2 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: rotateZ 300ms 160ms ease-in-out forwards;
+              animation: rotateZ 300ms 160ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-3, #footer .lang .depth .dropdown_menu-3 .dropdown_item-3 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: rotateZ 300ms 240ms ease-in-out forwards;
+              animation: rotateZ 300ms 240ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-4, #footer .lang .depth .dropdown_menu-3 .dropdown_item-4 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 320ms ease-in-out forwards;
+              animation: translateX 300ms 320ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-5, #footer .lang .depth .dropdown_menu-3 .dropdown_item-5 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 400ms ease-in-out forwards;
+              animation: translateX 300ms 400ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-6, #footer .lang .depth .dropdown_menu-3 .dropdown_item-6 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 480ms ease-in-out forwards;
+              animation: translateX 300ms 480ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-7, #footer .lang .depth .dropdown_menu-3 .dropdown_item-7 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 560ms ease-in-out forwards;
+              animation: translateX 300ms 560ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-8, #footer .lang .depth .dropdown_menu-3 .dropdown_item-8 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 640ms ease-in-out forwards;
+              animation: translateX 300ms 640ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-9, #footer .lang .depth .dropdown_menu-3 .dropdown_item-9 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 720ms ease-in-out forwards;
+              animation: translateX 300ms 720ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-10, #footer .lang .depth .dropdown_menu-3 .dropdown_item-10 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 800ms ease-in-out forwards;
+              animation: translateX 300ms 800ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-11, #footer .lang .depth .dropdown_menu-3 .dropdown_item-11 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 880ms ease-in-out forwards;
+              animation: translateX 300ms 880ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-12, #footer .lang .depth .dropdown_menu-3 .dropdown_item-12 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 960ms ease-in-out forwards;
+              animation: translateX 300ms 960ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-13, #footer .lang .depth .dropdown_menu-3 .dropdown_item-13 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 1040ms ease-in-out forwards;
+              animation: translateX 300ms 1040ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-14, #footer .lang .depth .dropdown_menu-3 .dropdown_item-14 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 1120ms ease-in-out forwards;
+              animation: translateX 300ms 1120ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-15, #footer .lang .depth .dropdown_menu-3 .dropdown_item-15 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 1200ms ease-in-out forwards;
+              animation: translateX 300ms 1200ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-16, #footer .lang .depth .dropdown_menu-3 .dropdown_item-16 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 1280ms ease-in-out forwards;
+              animation: translateX 300ms 1280ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-17, #footer .lang .depth .dropdown_menu-3 .dropdown_item-17 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 1360ms ease-in-out forwards;
+              animation: translateX 300ms 1360ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-18, #footer .lang .depth .dropdown_menu-3 .dropdown_item-18 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 1440ms ease-in-out forwards;
+              animation: translateX 300ms 1440ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-19, #footer .lang .depth .dropdown_menu-3 .dropdown_item-19 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 1520ms ease-in-out forwards;
+              animation: translateX 300ms 1520ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-20, #footer .lang .depth .dropdown_menu-3 .dropdown_item-20 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 1600ms ease-in-out forwards;
+              animation: translateX 300ms 1600ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-21, #footer .lang .depth .dropdown_menu-3 .dropdown_item-21 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 1680ms ease-in-out forwards;
+              animation: translateX 300ms 1680ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-22, #footer .lang .depth .dropdown_menu-3 .dropdown_item-22 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 1760ms ease-in-out forwards;
+              animation: translateX 300ms 1760ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-23, #footer .lang .depth .dropdown_menu-3 .dropdown_item-23 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 1840ms ease-in-out forwards;
+              animation: translateX 300ms 1840ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-24, #footer .lang .depth .dropdown_menu-3 .dropdown_item-24 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 1920ms ease-in-out forwards;
+              animation: translateX 300ms 1920ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-25, #footer .lang .depth .dropdown_menu-3 .dropdown_item-25 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 2000ms ease-in-out forwards;
+              animation: translateX 300ms 2000ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-26, #footer .lang .depth .dropdown_menu-3 .dropdown_item-26 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 2080ms ease-in-out forwards;
+              animation: translateX 300ms 2080ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-27, #footer .lang .depth .dropdown_menu-3 .dropdown_item-27 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 2160ms ease-in-out forwards;
+              animation: translateX 300ms 2160ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-28, #footer .lang .depth .dropdown_menu-3 .dropdown_item-28 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 2240ms ease-in-out forwards;
+              animation: translateX 300ms 2240ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-29, #footer .lang .depth .dropdown_menu-3 .dropdown_item-29 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 2320ms ease-in-out forwards;
+              animation: translateX 300ms 2320ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-30, #footer .lang .depth .dropdown_menu-3 .dropdown_item-30 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 2400ms ease-in-out forwards;
+              animation: translateX 300ms 2400ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-31, #footer .lang .depth .dropdown_menu-3 .dropdown_item-31 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 2480ms ease-in-out forwards;
+              animation: translateX 300ms 2480ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-32, #footer .lang .depth .dropdown_menu-3 .dropdown_item-32 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 2560ms ease-in-out forwards;
+              animation: translateX 300ms 2560ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-33, #footer .lang .depth .dropdown_menu-3 .dropdown_item-33 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 2640ms ease-in-out forwards;
+              animation: translateX 300ms 2640ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-34, #footer .lang .depth .dropdown_menu-3 .dropdown_item-34 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 2720ms ease-in-out forwards;
+              animation: translateX 300ms 2720ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-35, #footer .lang .depth .dropdown_menu-3 .dropdown_item-35 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 2800ms ease-in-out forwards;
+              animation: translateX 300ms 2800ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-36, #footer .lang .depth .dropdown_menu-3 .dropdown_item-36 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 2880ms ease-in-out forwards;
+              animation: translateX 300ms 2880ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-37, #footer .lang .depth .dropdown_menu-3 .dropdown_item-37 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 2960ms ease-in-out forwards;
+              animation: translateX 300ms 2960ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-38, #footer .lang .depth .dropdown_menu-3 .dropdown_item-38 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 3040ms ease-in-out forwards;
+              animation: translateX 300ms 3040ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-39, #footer .lang .depth .dropdown_menu-3 .dropdown_item-39 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 3120ms ease-in-out forwards;
+              animation: translateX 300ms 3120ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-40, #footer .lang .depth .dropdown_menu-3 .dropdown_item-40 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 3200ms ease-in-out forwards;
+              animation: translateX 300ms 3200ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-41, #footer .lang .depth .dropdown_menu-3 .dropdown_item-41 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 3280ms ease-in-out forwards;
+              animation: translateX 300ms 3280ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-42, #footer .lang .depth .dropdown_menu-3 .dropdown_item-42 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 3360ms ease-in-out forwards;
+              animation: translateX 300ms 3360ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-43, #footer .lang .depth .dropdown_menu-3 .dropdown_item-43 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 3440ms ease-in-out forwards;
+              animation: translateX 300ms 3440ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-44, #footer .lang .depth .dropdown_menu-3 .dropdown_item-44 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 3520ms ease-in-out forwards;
+              animation: translateX 300ms 3520ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-45, #footer .lang .depth .dropdown_menu-3 .dropdown_item-45 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 3600ms ease-in-out forwards;
+              animation: translateX 300ms 3600ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-46, #footer .lang .depth .dropdown_menu-3 .dropdown_item-46 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 3680ms ease-in-out forwards;
+              animation: translateX 300ms 3680ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-47, #footer .lang .depth .dropdown_menu-3 .dropdown_item-47 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 3760ms ease-in-out forwards;
+              animation: translateX 300ms 3760ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-48, #footer .lang .depth .dropdown_menu-3 .dropdown_item-48 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 3840ms ease-in-out forwards;
+              animation: translateX 300ms 3840ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-49, #footer .lang .depth .dropdown_menu-3 .dropdown_item-49 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 3920ms ease-in-out forwards;
+              animation: translateX 300ms 3920ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-50, #footer .lang .depth .dropdown_menu-3 .dropdown_item-50 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 4000ms ease-in-out forwards;
+              animation: translateX 300ms 4000ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-51, #footer .lang .depth .dropdown_menu-3 .dropdown_item-51 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 4080ms ease-in-out forwards;
+              animation: translateX 300ms 4080ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-52, #footer .lang .depth .dropdown_menu-3 .dropdown_item-52 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 4160ms ease-in-out forwards;
+              animation: translateX 300ms 4160ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-53, #footer .lang .depth .dropdown_menu-3 .dropdown_item-53 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 4240ms ease-in-out forwards;
+              animation: translateX 300ms 4240ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-54, #footer .lang .depth .dropdown_menu-3 .dropdown_item-54 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 4320ms ease-in-out forwards;
+              animation: translateX 300ms 4320ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-55, #footer .lang .depth .dropdown_menu-3 .dropdown_item-55 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 4400ms ease-in-out forwards;
+              animation: translateX 300ms 4400ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-56, #footer .lang .depth .dropdown_menu-3 .dropdown_item-56 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 4480ms ease-in-out forwards;
+              animation: translateX 300ms 4480ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-57, #footer .lang .depth .dropdown_menu-3 .dropdown_item-57 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 4560ms ease-in-out forwards;
+              animation: translateX 300ms 4560ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-58, #footer .lang .depth .dropdown_menu-3 .dropdown_item-58 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 4640ms ease-in-out forwards;
+              animation: translateX 300ms 4640ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-59, #footer .lang .depth .dropdown_menu-3 .dropdown_item-59 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 4720ms ease-in-out forwards;
+              animation: translateX 300ms 4720ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-60, #footer .lang .depth .dropdown_menu-3 .dropdown_item-60 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 4800ms ease-in-out forwards;
+              animation: translateX 300ms 4800ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-61, #footer .lang .depth .dropdown_menu-3 .dropdown_item-61 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 4880ms ease-in-out forwards;
+              animation: translateX 300ms 4880ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-62, #footer .lang .depth .dropdown_menu-3 .dropdown_item-62 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 4960ms ease-in-out forwards;
+              animation: translateX 300ms 4960ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-63, #footer .lang .depth .dropdown_menu-3 .dropdown_item-63 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 5040ms ease-in-out forwards;
+              animation: translateX 300ms 5040ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-64, #footer .lang .depth .dropdown_menu-3 .dropdown_item-64 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 5120ms ease-in-out forwards;
+              animation: translateX 300ms 5120ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-65, #footer .lang .depth .dropdown_menu-3 .dropdown_item-65 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 5200ms ease-in-out forwards;
+              animation: translateX 300ms 5200ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-66, #footer .lang .depth .dropdown_menu-3 .dropdown_item-66 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 5280ms ease-in-out forwards;
+              animation: translateX 300ms 5280ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-67, #footer .lang .depth .dropdown_menu-3 .dropdown_item-67 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 5360ms ease-in-out forwards;
+              animation: translateX 300ms 5360ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-68, #footer .lang .depth .dropdown_menu-3 .dropdown_item-68 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 5440ms ease-in-out forwards;
+              animation: translateX 300ms 5440ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-69, #footer .lang .depth .dropdown_menu-3 .dropdown_item-69 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 5520ms ease-in-out forwards;
+              animation: translateX 300ms 5520ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-70, #footer .lang .depth .dropdown_menu-3 .dropdown_item-70 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 5600ms ease-in-out forwards;
+              animation: translateX 300ms 5600ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-71, #footer .lang .depth .dropdown_menu-3 .dropdown_item-71 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 5680ms ease-in-out forwards;
+              animation: translateX 300ms 5680ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-72, #footer .lang .depth .dropdown_menu-3 .dropdown_item-72 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 5760ms ease-in-out forwards;
+              animation: translateX 300ms 5760ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-73, #footer .lang .depth .dropdown_menu-3 .dropdown_item-73 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 5840ms ease-in-out forwards;
+              animation: translateX 300ms 5840ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-74, #footer .lang .depth .dropdown_menu-3 .dropdown_item-74 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 5920ms ease-in-out forwards;
+              animation: translateX 300ms 5920ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-75, #footer .lang .depth .dropdown_menu-3 .dropdown_item-75 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 6000ms ease-in-out forwards;
+              animation: translateX 300ms 6000ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-76, #footer .lang .depth .dropdown_menu-3 .dropdown_item-76 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 6080ms ease-in-out forwards;
+              animation: translateX 300ms 6080ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-77, #footer .lang .depth .dropdown_menu-3 .dropdown_item-77 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 6160ms ease-in-out forwards;
+              animation: translateX 300ms 6160ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-78, #footer .lang .depth .dropdown_menu-3 .dropdown_item-78 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 6240ms ease-in-out forwards;
+              animation: translateX 300ms 6240ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-79, #footer .lang .depth .dropdown_menu-3 .dropdown_item-79 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 6320ms ease-in-out forwards;
+              animation: translateX 300ms 6320ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-80, #footer .lang .depth .dropdown_menu-3 .dropdown_item-80 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 6400ms ease-in-out forwards;
+              animation: translateX 300ms 6400ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-81, #footer .lang .depth .dropdown_menu-3 .dropdown_item-81 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 6480ms ease-in-out forwards;
+              animation: translateX 300ms 6480ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-82, #footer .lang .depth .dropdown_menu-3 .dropdown_item-82 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 6560ms ease-in-out forwards;
+              animation: translateX 300ms 6560ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-83, #footer .lang .depth .dropdown_menu-3 .dropdown_item-83 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 6640ms ease-in-out forwards;
+              animation: translateX 300ms 6640ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-84, #footer .lang .depth .dropdown_menu-3 .dropdown_item-84 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 6720ms ease-in-out forwards;
+              animation: translateX 300ms 6720ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-85, #footer .lang .depth .dropdown_menu-3 .dropdown_item-85 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 6800ms ease-in-out forwards;
+              animation: translateX 300ms 6800ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-86, #footer .lang .depth .dropdown_menu-3 .dropdown_item-86 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 6880ms ease-in-out forwards;
+              animation: translateX 300ms 6880ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-87, #footer .lang .depth .dropdown_menu-3 .dropdown_item-87 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 6960ms ease-in-out forwards;
+              animation: translateX 300ms 6960ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-88, #footer .lang .depth .dropdown_menu-3 .dropdown_item-88 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 7040ms ease-in-out forwards;
+              animation: translateX 300ms 7040ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-89, #footer .lang .depth .dropdown_menu-3 .dropdown_item-89 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 7120ms ease-in-out forwards;
+              animation: translateX 300ms 7120ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-90, #footer .lang .depth .dropdown_menu-3 .dropdown_item-90 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 7200ms ease-in-out forwards;
+              animation: translateX 300ms 7200ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-91, #footer .lang .depth .dropdown_menu-3 .dropdown_item-91 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 7280ms ease-in-out forwards;
+              animation: translateX 300ms 7280ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-92, #footer .lang .depth .dropdown_menu-3 .dropdown_item-92 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 7360ms ease-in-out forwards;
+              animation: translateX 300ms 7360ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-93, #footer .lang .depth .dropdown_menu-3 .dropdown_item-93 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 7440ms ease-in-out forwards;
+              animation: translateX 300ms 7440ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-94, #footer .lang .depth .dropdown_menu-3 .dropdown_item-94 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 7520ms ease-in-out forwards;
+              animation: translateX 300ms 7520ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-95, #footer .lang .depth .dropdown_menu-3 .dropdown_item-95 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 7600ms ease-in-out forwards;
+              animation: translateX 300ms 7600ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-96, #footer .lang .depth .dropdown_menu-3 .dropdown_item-96 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 7680ms ease-in-out forwards;
+              animation: translateX 300ms 7680ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-97, #footer .lang .depth .dropdown_menu-3 .dropdown_item-97 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 7760ms ease-in-out forwards;
+              animation: translateX 300ms 7760ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-98, #footer .lang .depth .dropdown_menu-3 .dropdown_item-98 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 7840ms ease-in-out forwards;
+              animation: translateX 300ms 7840ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-99, #footer .lang .depth .dropdown_menu-3 .dropdown_item-99 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 7920ms ease-in-out forwards;
+              animation: translateX 300ms 7920ms ease-in-out forwards; }
+    #header .lang .depth .dropdown_menu-3 .dropdown_item-100, #footer .lang .depth .dropdown_menu-3 .dropdown_item-100 {
+      -webkit-transform-origin: top center;
+              transform-origin: top center;
+      -webkit-animation: translateX 300ms 8000ms ease-in-out forwards;
+              animation: translateX 300ms 8000ms ease-in-out forwards; }
+    #header .lang .depth:hover, #footer .lang .depth:hover {
+      cursor: pointer; }
+      #header .lang .depth:hover .dropdown_menu li, #footer .lang .depth:hover .dropdown_menu li {
+        display: block; }
+    #header .lang .depth:hover, #footer .lang .depth:hover {
+      display: block; }
+      #header .lang .depth:hover .dropdown_menu--animated, #footer .lang .depth:hover .dropdown_menu--animated {
+        display: block; }
+  #header .sidemenu, #footer .sidemenu {
+    width: 120px;
+    text-align: center; }
+    #header .sidemenu .menu_btn, #footer .sidemenu .menu_btn {
+      position: relative;
+      z-index: 10;
+      cursor: pointer; }
+      #header .sidemenu .menu_btn .menu-trigger, #header .sidemenu .menu_btn .menu-trigger span, #footer .sidemenu .menu_btn .menu-trigger, #footer .sidemenu .menu_btn .menu-trigger span {
+        display: inline-block;
+        -webkit-transition: all 0.4s;
+        transition: all 0.4s;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box; }
+      #header .sidemenu .menu_btn .menu-trigger, #footer .sidemenu .menu_btn .menu-trigger {
+        position: relative;
+        width: 30px;
+        height: 24px; }
+        #header .sidemenu .menu_btn .menu-trigger span, #footer .sidemenu .menu_btn .menu-trigger span {
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 4px;
+          background: black;
+          border-radius: 4px; }
+          #header .sidemenu .menu_btn .menu-trigger span:nth-child(1), #footer .sidemenu .menu_btn .menu-trigger span:nth-child(1) {
+            top: 0; }
+          #header .sidemenu .menu_btn .menu-trigger span:nth-child(2), #footer .sidemenu .menu_btn .menu-trigger span:nth-child(2) {
+            top: 10px; }
+          #header .sidemenu .menu_btn .menu-trigger span:nth-child(3), #footer .sidemenu .menu_btn .menu-trigger span:nth-child(3) {
+            bottom: 0; }
+    #header .sidemenu .sidemenu_container, #footer .sidemenu .sidemenu_container {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      background: white;
+      height: 100vh; }
+
+#header {
+  height: 80px; }
+
+#main .area-common {
+  position: relative;
+  width: 100%; }
+  #main .area-common .inner {
+    width: 1400px;
+    margin: auto; }
+
+@-webkit-keyframes rotateZ {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateZ(290px);
+            transform: translateZ(290px); }
+  80% {
+    -webkit-transform: translateZ(10px);
+            transform: translateZ(10px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0); } }
+
+@keyframes rotateZ {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateZ(290px);
+            transform: translateZ(290px); }
+  80% {
+    -webkit-transform: translateZ(10px);
+            transform: translateZ(10px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0); } }
+@-webkit-keyframes translateX {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(60px);
+            transform: translateX(60px); }
+  80% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px); } }
+@keyframes translateX {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(60px);
+            transform: translateX(60px); }
+  80% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px); } }
+@-webkit-keyframes downOut {
+  0% {
+    -webkit-transform: translateZ(200px) transLateY(40px);
+            transform: translateZ(200px) transLateY(40px); }
+  80% {
+    -webkit-transform: translateZ(-10px) transLateY(0px);
+            transform: translateZ(-10px) transLateY(0px); }
+  100% {
+    -webkit-transform: translateZ(0px) transLateY(0px);
+            transform: translateZ(0px) transLateY(0px); } }
+@keyframes downOut {
+  0% {
+    -webkit-transform: translateZ(200px) transLateY(40px);
+            transform: translateZ(200px) transLateY(40px); }
+  80% {
+    -webkit-transform: translateZ(-10px) transLateY(0px);
+            transform: translateZ(-10px) transLateY(0px); }
+  100% {
+    -webkit-transform: translateZ(0px) transLateY(0px);
+            transform: translateZ(0px) transLateY(0px); } }
 /* Page */
 body {
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
 #app {
-  text-align: center;
-}
+  text-align: center; }
 
 .c2 {
-  height: 400px;
-}
+  height: 400px; }
 
 .sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 100%;
-  height: 100vh;
-}
+  height: 100vh; }
 
 .slide-container {
   position: relative;
@@ -581,18 +1224,15 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
 .slide {
   position: absolute;
   display: none;
-  z-index: 0;
-}
+  z-index: 0; }
 
 .slide.enabled {
-  display: block;
-}
+  display: block; }
 
 .slide-big-text p {
   margin: 0;
@@ -601,18 +1241,15 @@ body {
   line-height: 1.35;
   letter-spacing: -1.5px;
   word-spacing: 1.5px;
-  text-align: center;
-}
+  text-align: center; }
 
 .slide-small-text {
   margin-top: 20px;
-  margin-left: 5px;
-}
+  margin-left: 5px; }
 
 .slide-small-text p {
   font-size: 18px;
-  margin: 0;
-}
+  margin: 0; }
 
 .scdown {
   position: absolute;
@@ -620,6 +1257,6 @@ body {
   width: 100%;
   height: 50px;
   text-align: center;
-  bottom: 0px;
-}
+  bottom: 0px; }
+
 /*# sourceMappingURL=importsource.css.map */

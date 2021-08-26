@@ -9,8 +9,9 @@
     <meta name="keywords" content="이수민">
     <meta name="author" content="2021 portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../ottogi/scss/importsource.css">
+    <link rel="stylesheet" href="./scss/importsource.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -28,16 +29,21 @@
                 </ul>
             </div>
             <div class="lang">
-                <a href="">한국어선택</a>
                 <div class="depth">
-                    <ul>
-                        <li>한국어</li>
-                        <li>English</li>
+                    Language<i class="material-icons Medium">arrow_drop_down</i>
+                    <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-3">
+                        <li class="dropdown_item-1">한국어</li>
+                        <li class="dropdown_item-2">English</li>
+                        <li class="dropdown_item-3">中國語</li>
                     </ul>
                 </div>
             </div>
             <div class="sidemenu">
-                <button>햄버거메뉴</button>
+                <button class="menu_btn">
+                    <div class="hamburger">
+                        <div></div>
+                    </div>
+                </button>
                 <div class="sidemenu_container">
                     <div class="inner">
                         <aside class="menu_container">
@@ -117,9 +123,10 @@
             </div>
         </div>
     </header>
+<!--    https://codepen.io/brenden/pen/VLjKMQ-->
 
 
-    <section id="visual">
+    <section id="visual" style="display: none;">
         <div class="swiper-container mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">Slide 1</div>
@@ -137,7 +144,7 @@
         </section>
     </main>
 
-    <footer id="footer">
+    <footer id="footer" style="display: none;">
         <div class="inner">
             <div class="top">
                 <ul class="">
