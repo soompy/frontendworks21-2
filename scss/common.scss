@@ -1,0 +1,37 @@
+.theme-button {
+  @include flexCenter;
+  position: relative;
+  border: 2px solid #dc143c;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: transparent;
+  font-weight: bold;
+  color: #dc143c;
+  transition: color 150ms cubic-bezier(0.1, 0.7, 0.6, 0.9);
+  margin: 20px auto;
+  cursor: pointer;
+  .button-text {
+    font-size: 1.2em;
+  }
+  &:before {
+    @include pseudoElement;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+    background: #dc143c;
+    border-radius: 8px;
+    transform-origin: left center;
+    transform: scaleX(0);
+    transition: transform 150ms cubic-bezier(0.1, 0.7, 0.6, 0.9);
+  }
+  &:hover {
+    color: white;
+    border: 1px solid #dc143c;
+    &:before {
+      transform: scaleX(1);
+    }
+  }
+}

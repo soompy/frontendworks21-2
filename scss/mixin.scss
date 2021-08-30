@@ -3,3 +3,9 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin pseudoElement {
+  display: block;
+  clear: both;
+  content: '';
+}
