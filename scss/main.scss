@@ -6,6 +6,9 @@
   width: 1400px;
   margin: auto;
   padding: 80px 0;
+  .title {
+    font-size: 1em;
+  }
   &.area-about {
     text-align: center;
   }
@@ -196,4 +199,33 @@
       }
     }
   }
+}
+
+.rolling-box {
+  span {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 2em;
+    font-weight: bold;
+  }
+}
+.rolling-wrap {
+  overflow: hidden;
+  position: relative;
+  > div {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .rolling-text-box {
+    @include flexCenter;
+    li {
+      font-weight: bold;
+      font-size: 2em;
+    }
+  }
+}
+
+@keyframes rollingText {
+
 }

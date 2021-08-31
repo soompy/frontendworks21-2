@@ -137,7 +137,7 @@
 <!--    https://codepen.io/brenden/pen/VLjKMQ-->
 
 
-    <section id="visual">
+    <section id="visual" style="display: none;">
         <div class="swiper-container visualSwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -156,8 +156,8 @@
 
 
     <main id="main">
-        <section class="area-about area-common">
-            <h2>ABOUT</h2>
+        <section class="area-about area-common" style="display: none;">
+            <h2 class="title">ABOUT</h2>
             <div class="flip-text-animation" style="display: none;">
                 <div class=flip>
                     <div>
@@ -225,9 +225,60 @@
         </section>
 
 <!--        https://dongil82.co.kr/now-di/-->
-        <section class="area-about area-common">
+        <section class="area-global area-common">
+            <div class="rolling-wrap">
+                <marquee class="rolling-box" behavior="scroll" direction="left"></marquee>
+            </div>
+            <button class="theme-button"><span class="button-text">Find out more</span></button>
+        </section>
+
+        <section class="area-common">
+            <h2 class="title">BRANDS</h2>
+            <strong class="main-title">K-Food 열풍을 만들어 가는 <br>제일제당의 식품 브랜드를 소개합니다.</strong>
+<!--            https://codepen.io/mildrenben/pen/bdGdOb-->
+            <div class="tab-wrap">
+                <input type="radio" name="tabs" id="tab1" checked>
+                <div class="tab-label-content" id="tab1-content">
+                    <label for="tab1">Tab 1</label>
+                    <div class="tab-content">
+                        내용1
+                        <figure class="image-box"><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/ls-sample4.jpg" alt="ls-sample4"/></a></figure>
+                    </div>
+                </div>
+
+                <input type="radio" name="tabs" id="tab2">
+                <div class="tab-label-content" id="tab2-content">
+                    <label for="tab2">Tab 2</label>
+                    <div class="tab-content">
+                        내용2
+                        <figure class="image-box"><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/ls-sample4.jpg" alt="ls-sample4"/></a></figure>
+                    </div>
+                </div>
+
+                <input type="radio" name="tabs" id="tab3">
+                <div class="tab-label-content" id="tab3-content">
+                    <label for="tab3">Tab 3</label>
+                    <div class="tab-content">
+                        내용3
+                        <figure class="image-box"><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/ls-sample4.jpg" alt="ls-sample4"/></a></figure>
+                    </div>
+                </div>
+
+                <input type="radio" name="tabs" id="tab4">
+                <div class="tab-label-content" id="tab4-content">
+                    <label for="tab4">Tab 4</label>
+                    <div class="tab-content">
+                        내용4
+                        <figure class="image-box"><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/ls-sample4.jpg" alt="ls-sample4"/></a></figure>
+                    </div>
+                </div>
+
+                <div class="slide"></div>
+            </div>
 
         </section>
+
+<!--        https://codepen.io/xdesro/pen/mBmgNj-->
     </main>
 
     <footer id="footer" style="display: none;">
@@ -279,6 +330,7 @@
     </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/effect.js"></script>
     <script>
         var swiper = new Swiper(".visualSwiper", {
             pagination: {
