@@ -7,7 +7,20 @@
   margin: auto;
   padding: 80px 0;
   .title {
-    font-size: 1em;
+    font-size: 1.4em;
+    text-align: center;
+    color: #dc143c;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .main-title {
+    display: block;
+    font-size: 2em;
+    text-align: center;
+    line-height: 1.5em;
+    margin: 16px 0 40px;
+    letter-spacing: -1.5px;
   }
   &.area-about {
     text-align: center;
@@ -205,7 +218,8 @@
   span {
     display: inline-block;
     margin-right: 20px;
-    font-size: 2em;
+    font-size: 1.4em;
+    opacity: 0.4;
     font-weight: bold;
   }
 }
@@ -226,6 +240,32 @@
   }
 }
 
-@keyframes rollingText {
+
+
+
+.area-innovation {
+  .innovation-wrap {
+    @include flexCenter;
+    width: 100%;
+  }
+}
+
+
+
+
+//SVG TEXT
+@keyframes svg-text-anim {
+  40% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+  }
+  60% {
+    stroke-dashoffset: 0;
+    fill: #ffffff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #ffffff;
+  }
 
 }

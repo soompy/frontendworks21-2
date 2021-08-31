@@ -424,7 +424,19 @@ figure {
   margin: auto;
   padding: 80px 0; }
   .area-common .title {
-    font-size: 1em; }
+    font-size: 1.4em;
+    text-align: center;
+    color: #dc143c;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+  .area-common .main-title {
+    display: block;
+    font-size: 2em;
+    text-align: center;
+    line-height: 1.5em;
+    margin: 16px 0 40px;
+    letter-spacing: -1.5px; }
   .area-common.area-about {
     text-align: center; }
 
@@ -634,7 +646,8 @@ figure {
 .rolling-box span {
   display: inline-block;
   margin-right: 20px;
-  font-size: 2em;
+  font-size: 1.4em;
+  opacity: 0.4;
   font-weight: bold; }
 
 .rolling-wrap {
@@ -658,6 +671,39 @@ figure {
       font-weight: bold;
       font-size: 2em; }
 
+.area-innovation .innovation-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%; }
+
+@-webkit-keyframes svg-text-anim {
+  40% {
+    stroke-dashoffset: 0;
+    fill: transparent; }
+  60% {
+    stroke-dashoffset: 0;
+    fill: #ffffff; }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #ffffff; } }
+
+@keyframes svg-text-anim {
+  40% {
+    stroke-dashoffset: 0;
+    fill: transparent; }
+  60% {
+    stroke-dashoffset: 0;
+    fill: #ffffff; }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #ffffff; } }
 html {
   font-size: 14px; }
 
@@ -1730,8 +1776,8 @@ label {
 .image-box {
   overflow: hidden;
   position: relative;
-  width: 50%;
-  height: 380px;
+  width: 100%;
+  height: 280px;
   margin: 10px;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); }
@@ -1740,12 +1786,13 @@ label {
     .image-box a img {
       position: absolute;
       right: 0;
+      width: 140%;
       height: 100%;
       -webkit-transition: all 2s ease-out;
       transition: all 2s ease-out; }
   .image-box:hover img {
-    -webkit-transform: translateX(130px);
-            transform: translateX(130px); }
+    -webkit-transform: translateX(20%);
+            transform: translateX(20%); }
 
 /* Page */
 #main {
@@ -1757,7 +1804,19 @@ label {
   margin: auto;
   padding: 80px 0; }
   .area-common .title {
-    font-size: 1em; }
+    font-size: 1.4em;
+    text-align: center;
+    color: #dc143c;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+  .area-common .main-title {
+    display: block;
+    font-size: 2em;
+    text-align: center;
+    line-height: 1.5em;
+    margin: 16px 0 40px;
+    letter-spacing: -1.5px; }
   .area-common.area-about {
     text-align: center; }
 
@@ -1949,7 +2008,8 @@ label {
 .rolling-box span {
   display: inline-block;
   margin-right: 20px;
-  font-size: 2em;
+  font-size: 1.4em;
+  opacity: 0.4;
   font-weight: bold; }
 
 .rolling-wrap {
@@ -1972,5 +2032,28 @@ label {
     .rolling-wrap .rolling-text-box li {
       font-weight: bold;
       font-size: 2em; }
+
+.area-innovation .innovation-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%; }
+
+@keyframes svg-text-anim {
+  40% {
+    stroke-dashoffset: 0;
+    fill: transparent; }
+  60% {
+    stroke-dashoffset: 0;
+    fill: #ffffff; }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #ffffff; } }
 
 /*# sourceMappingURL=importsource.css.map */
