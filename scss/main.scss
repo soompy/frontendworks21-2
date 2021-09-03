@@ -253,6 +253,68 @@
 
 
 
+//k-food-life
+.k-food-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-gap: 10px;
+  .grid-box {
+    overflow: hidden;
+    height: 300px;
+    span {
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat !important;
+      background-position: center center !important;
+      background-size: cover !important;
+      filter: grayscale(50%);
+      transition: all 1s ease-in-out;
+      object-fit: scale-down;
+      svg {
+        object-position: 20px 20px;
+      }
+    }
+    &:nth-child(1) {
+      span {
+        background: url('https://i.pinimg.com/originals/85/77/ba/8577bae9345e84b55c745d5fb91c5602.jpg');
+      }
+    }
+    &:nth-child(2) {
+      span {
+        background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuaIqy_WEHLl9vCSbjZwsWbAz27bhXrBKSEV_-_6RWS84P2oFHbEhfu-U5SE0mwr1594E&usqp=CAU');
+      }
+    }
+    &:nth-child(3) {
+      span {
+        background: url('https://img.insight.co.kr/static/2019/03/14/700/6nw6640bc79i447811ud.jpg');
+      }
+    }
+    &:nth-child(4) {
+      span {
+        background: url('http://img.tf.co.kr/article/home/2021/08/17/20214311629185095.jpg');
+      }
+    }
+    &:last-child {
+      span {
+        background: url('https://lh3.googleusercontent.com/proxy/3qODmZR_nuMUjsatu7ZK4d3A3KNUXhgQyTDA-QLCQoDXceoyhrt2k9MA2XfIqFS7kWM9hJK8yxEnf4-XT-sFTgSMtu764zUTBbiDSxQ87yt3e4DlGr3rPJl_pxskWg');
+      }
+    }
+    &:hover {
+      span {
+        filter: grayscale(0);
+        transform: scale(1.1);
+        object-position: left-top;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+
+
 //SVG TEXT
 @keyframes svg-text-anim {
   40% {
