@@ -1,9 +1,12 @@
 html {
   font-size: 14px;
 }
+#header {
+  position: fixed;
+  z-index: 10;
+}
 #header,
 #footer {
-  position: fixed;
   width: 100%;
   .inner {
     display: flex;
@@ -279,7 +282,6 @@ html {
         width: 60px;
         height: 2px;
         &.swiper-pagination-bullet-active {
-
         }
       }
     }

@@ -254,9 +254,9 @@
     flex: 1;
     flex-shrink: 0;
     height: 500px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: cover !important;
     .text {
       opacity: 0;
       width: 0;
@@ -314,7 +314,12 @@
         opacity: 1;
         width: 100%;
         height: auto;
-        background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0) 100%);
+        background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.6) 0%,
+          rgba(0, 0, 0, 0.6) 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
         .inner {
           opacity: 1;
         }
@@ -343,6 +348,7 @@
       position: relative;
       width: 100%;
       height: 100%;
+      padding: 40px;
       background-repeat: no-repeat !important;
       background-position: center center !important;
       background-size: cover !important;
@@ -355,27 +361,28 @@
     }
     &:nth-child(1) {
       span {
-        background: url('https://i.pinimg.com/originals/85/77/ba/8577bae9345e84b55c745d5fb91c5602.jpg');
+        background: url("https://i.pinimg.com/originals/85/77/ba/8577bae9345e84b55c745d5fb91c5602.jpg");
       }
     }
     &:nth-child(2) {
       span {
-        background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuaIqy_WEHLl9vCSbjZwsWbAz27bhXrBKSEV_-_6RWS84P2oFHbEhfu-U5SE0mwr1594E&usqp=CAU');
+        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuaIqy_WEHLl9vCSbjZwsWbAz27bhXrBKSEV_-_6RWS84P2oFHbEhfu-U5SE0mwr1594E&usqp=CAU");
       }
     }
     &:nth-child(3) {
       span {
-        background: url('https://img.insight.co.kr/static/2019/03/14/700/6nw6640bc79i447811ud.jpg');
+        background: url("https://img.insight.co.kr/static/2019/03/14/700/6nw6640bc79i447811ud.jpg");
       }
     }
     &:nth-child(4) {
       span {
-        background: url('http://img.tf.co.kr/article/home/2021/08/17/20214311629185095.jpg');
+        background: url("http://img.tf.co.kr/article/home/2021/08/17/20214311629185095.jpg");
       }
     }
     &:last-child {
+      grid-column: 2/4;
       span {
-        background: url('https://lh3.googleusercontent.com/proxy/3qODmZR_nuMUjsatu7ZK4d3A3KNUXhgQyTDA-QLCQoDXceoyhrt2k9MA2XfIqFS7kWM9hJK8yxEnf4-XT-sFTgSMtu764zUTBbiDSxQ87yt3e4DlGr3rPJl_pxskWg');
+        background: url("https://www.cj.co.kr/cj_files/kfood/visual/201912/1577336117221_0.jpg");
       }
     }
     &:hover {
@@ -408,20 +415,23 @@
 .smartfactory-wrap {
   @include flexCenter;
   .slide-item {
+    position: relative;
     width: 50%;
     height: 500px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: cover !important;
     transition: all 1s ease-in-out;
     color: white;
-    .inner {
+    .item-inner {
+      position: absolute;
+      left: 40px;
+      bottom: 40px;
       display: flex;
       flex-direction: column;
-      height: 100%;
-      padding: 80px 40px;
       h2 {
         font-size: 2em;
+        margin-bottom: 20px;
       }
       p {
         font-size: 1em;
@@ -436,7 +446,6 @@
     }
     &:hover {
       width: 55%;
-
     }
   }
 }

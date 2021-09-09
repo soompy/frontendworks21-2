@@ -38,11 +38,11 @@
 }
 
 //탭
-$cyan: #00bcd4;
-$yellow: #ffeb3b;
-$grey: #9e9e9e;
+$red: #dc143c;
+$yellow: #f1b00f;
+$grey: #cccccc;
 
-$num-of-tabs: 4;
+$num-of-tabs: 5;
 
 @mixin tabs {
   @for $i from 1 through $num-of-tabs {
@@ -55,91 +55,92 @@ $num-of-tabs: 4;
     }
   }
 }
-
+.brands-wrap {
+  height: 36vw;
+}
 .tab-wrap {
   width: 100%;
   position: relative;
   display: flex;
-}
-
-input[type="radio"][name="tabs"] {
-  position: absolute;
-  z-index: -1;
-  &:checked {
-    + .tab-label-content {
-      label {
-        color: white;
-      }
-      .tab-content {
-        display: block;
-      }
-    }
-  }
-  @include tabs;
-  &:first-of-type {
-    &:checked {
-      ~ .slide {
-        left: 0;
-      }
-    }
-  }
-}
-
-label {
-  cursor: pointer;
-  color: rgba(255,255,255,0.8);
-  background-color: $cyan;
-  box-sizing: border-box;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 56px;
-  transition: color 0.2s ease;
-  width: 100%;
-}
-
-.slide {
-  background: $yellow;
-  width: calc(100% / #{$num-of-tabs});
-  height: 4px;
-  position: absolute;
-  left: 0;
-  top: calc(100% - 4px);
-  transition: left 0.3s ease-out;
-}
-
-.tab-label-content {
-  width: 100%;
-  .tab-content {
+  background-color: $red;
+  input[type="radio"][name="tabs"] {
     position: absolute;
-    top: 100px;
-    left: 16px;
-    width: 100%;
-    display: none;
-  }
-}
-
-.image-box {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  height: 280px;
-  margin: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  a {
-    display: block;
-    img {
-      position: absolute;
-      right: 0;
-      width: 140%;
-      height: 100%;
-      transition: all 2s ease-out;
+    z-index: -1;
+    &:checked {
+      + .tab-label-content {
+        label {
+          color: rgba(255, 255, 255, 1);
+        }
+        .tab-content {
+          display: block;
+        }
+      }
+    }
+    @include tabs;
+    &:first-of-type {
+      &:checked {
+        ~ .slide {
+          left: 0;
+        }
+      }
     }
   }
-  &:hover {
-    img {
-      transform: translateX(20%);
+
+  label {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 56px;
+    transition: color 0.2s ease;
+    width: 100%;
+  }
+
+  .slide {
+    background: $grey;
+    width: calc(100% / #{$num-of-tabs});
+    height: 4px;
+    position: absolute;
+    left: 0;
+    top: calc(100% - 4px);
+    transition: left 0.3s ease-out;
+  }
+
+  .tab-label-content {
+    width: 100%;
+    .tab-content {
+      position: absolute;
+      top: 100px;
+      left: 16px;
+      width: 100%;
+      display: none;
+    }
+  }
+
+  .image-box {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 30vw;
+    margin: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    a {
+      display: block;
+      img {
+        position: absolute;
+        right: 0;
+        width: 140%;
+        height: 100%;
+        transition: all 2s ease-out;
+      }
+    }
+    &:hover {
+      img {
+        transform: translateX(20%);
+      }
     }
   }
 }
