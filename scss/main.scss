@@ -30,7 +30,7 @@
 .flip-text-animation {
   @include flexCenter;
   color: #999;
-  font-size: 36px;
+  font-size: 2em;
   font-weight: bold;
   //position: relative;
   left: 0;
@@ -215,33 +215,29 @@
 }
 
 .rolling-box {
+  @include flexCenter;
+  width: auto;
+  transition: all 0.5s linear;
+  animation: slide-right 15s infinite;
+  transform: translateX(0);
   span {
     display: inline-block;
+    flex-shrink: 0;
     margin-right: 20px;
     font-size: 1.4em;
     opacity: 0.4;
     font-weight: bold;
   }
 }
-.rolling-wrap {
-  overflow: hidden;
-  position: relative;
-  > div {
-    position: absolute;
-    left: 0;
-    top: 0;
+
+@keyframes slide-right {
+  fron {
+    transform: translateX(0);
   }
-  .rolling-text-box {
-    @include flexCenter;
-    li {
-      font-weight: bold;
-      font-size: 2em;
-    }
+  to {
+    transform: translateX(-100%);
   }
 }
-
-
-
 
 .area-innovation {
   .innovation-wrap {
@@ -250,8 +246,88 @@
   }
 }
 
+.sustainability-wrap {
+  @include flexCenter;
+  .fold-box {
+    overflow: hidden;
+    position: relative;
+    flex: 1;
+    flex-shrink: 0;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    .text {
+      opacity: 0;
+      width: 0;
+      height: 0;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      font-weight: bold;
+      transition: all 5s linear;
+      color: white;
+      .inner {
+        opacity: 0;
+        padding: 60px 80px 40px;
+        span {
+          font-size: 1em;
+        }
+        p {
+          padding-top: 14px;
+          font-size: 1.2em;
+          line-height: 1.4em;
+        }
+      }
+    }
+    &:first-child {
+      background: url("https://www.cj.co.kr/cj_files/main/centerBanner/201901/1547532754543_0.jpg");
+    }
+    &:last-child {
+      background: url("https://www.cj.co.kr/cj_files/main/centerBanner/201901/1547792998067_0.jpg");
+    }
 
+    &:before {
+      @include pseudoElement;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 30%;
+      height: 100%;
+      background: white;
+      transition: all 5s linear;
+    }
+    &:after {
+      @include pseudoElement;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 30%;
+      height: 100%;
+      background: white;
+      transition: all 5s linear;
+    }
 
+    &:hover {
+      .text {
+        opacity: 1;
+        width: 100%;
+        height: auto;
+        background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0) 100%);
+        .inner {
+          opacity: 1;
+        }
+      }
+      &:before {
+        left: -30%;
+      }
+      &:after {
+        right: -30%;
+      }
+    }
+  }
+}
 
 //k-food-life
 .k-food-grid {
@@ -313,8 +389,6 @@
   }
 }
 
-
-
 //SVG TEXT
 @keyframes svg-text-anim {
   40% {
@@ -329,5 +403,40 @@
     stroke-dashoffset: 0;
     fill: #ffffff;
   }
+}
 
+.smartfactory-wrap {
+  @include flexCenter;
+  .slide-item {
+    width: 50%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+    color: white;
+    .inner {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding: 80px 40px;
+      h2 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1em;
+        margin-top: auto;
+      }
+    }
+    &:first-child {
+      background: url("https://www.cj.co.kr/resources/img/museum/slider_hatbahn_hall_5.jpg");
+    }
+    &:last-child {
+      background: url("https://www.cj.co.kr/resources/img/museum/slider_hatbahn_hall_9.jpg");
+    }
+    &:hover {
+      width: 55%;
+
+    }
+  }
 }

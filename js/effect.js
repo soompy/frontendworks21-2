@@ -15,14 +15,23 @@ for (let i = 0; i < 10; i++) {
 
 //
 // let arr = ["bg-01", "bg-02", "bg-03"];
-const historyList = document.querySelector('.history-item');
-const bgItem = document.querySelector('.bg > div');
-const currentClass = "bg-01";
 
 
-bgItem.classList.add('currentClass');
-for(i = 0; i < bgItem.length; i++) {
-    historyList[i].onmouseover(function () {
-        bgItem.classList.add('bg-0${i}');
+// bgItem.classList.add('currentClass');
+// for(i = 0; i < bgItem.length; i++) {
+//     historyList[i].onmouseover(function () {
+//         bgItem.classList.add('bg-0${i}');
+//     })
+// }
+
+Array.from({length}, (v, i) => {
+    const historyList = document.querySelector('.history-item');
+    const bgItem = document.querySelector('.bg > div');
+    bgItem.className = `bg-0${i}`;
+    historyList.addEventListener('onmouseover', (event) => {
+        bgItem.classList.add(`bg-0${i}`);
     })
-}
+})
+
+
+
