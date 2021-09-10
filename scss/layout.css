@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'flexCenter'.
-        on line 31 of C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\layout.scss, in `flexCenter'
-        from line 31 of C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\layout.scss
+        on line 34 of C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\layout.scss, in `flexCenter'
+        from line 34 of C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\layout.scss
 
-26:     }
-27:   }
-28:   .menu {
-29:     margin-left: auto;
-30:     ul {
-31:       @include flexCenter;
-32:       li {
-33:         margin: 0 16px;
-34:         font-size: 1.286em;
-35:       }
-36:     }
+29:     }
+30:   }
+31:   .menu {
+32:     margin-left: auto;
+33:     ul {
+34:       @include flexCenter;
+35:       li {
+36:         margin: 0 16px;
+37:         font-size: 1.286em;
+38:       }
+39:     }
 
 Backtrace:
-C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\layout.scss:31:in `flexCenter'
-C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\layout.scss:31
+C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\layout.scss:34:in `flexCenter'
+C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\layout.scss:34
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -88,4 +88,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'flexCenter'.\A         on line 31 of C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\layout.scss, in `flexCenter'\A         from line 31 of C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\layout.scss\A \A 26:     }\A 27:   }\A 28:   .menu {\A 29:     margin-left: auto;\A 30:     ul {\A 31:       @include flexCenter;\A 32:       li {\A 33:         margin: 0 16px;\A 34:         font-size: 1.286em;\A 35:       }\A 36:     }"; }
+  content: "Error: Undefined mixin 'flexCenter'.\A         on line 34 of C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\layout.scss, in `flexCenter'\A         from line 34 of C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\layout.scss\A \A 29:     }\A 30:   }\A 31:   .menu {\A 32:     margin-left: auto;\A 33:     ul {\A 34:       @include flexCenter;\A 35:       li {\A 36:         margin: 0 16px;\A 37:         font-size: 1.286em;\A 38:       }\A 39:     }"; }

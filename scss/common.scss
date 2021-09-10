@@ -3,7 +3,7 @@
   @include flexCenter;
   position: relative;
   border: 2px solid #dc143c;
-  padding: 10px 12px;
+  padding: 16px;
   border-radius: 8px;
   background: transparent;
   font-weight: bold;
@@ -12,7 +12,7 @@
   margin: 20px auto;
   cursor: pointer;
   .button-text {
-    font-size: 1.2em;
+    font-size: 1.6em;
   }
   &:before {
     @include pseudoElement;
