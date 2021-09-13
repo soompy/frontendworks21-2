@@ -9,7 +9,7 @@
   font-weight: bold;
   color: #dc143c;
   transition: color 150ms cubic-bezier(0.1, 0.7, 0.6, 0.9);
-  margin: 20px auto;
+  margin: 80px auto 0;
   cursor: pointer;
   .button-text {
     font-size: 1.6em;
@@ -33,6 +33,42 @@
     border: 1px solid #dc143c;
     &:before {
       transform: scaleX(1);
+    }
+  }
+}
+
+.sub-button {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 20px;
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
+  font-weight: bold;
+  &:before {
+    left: 0;
+    top: 0;
+  }
+  &:after {
+    right: 0;
+    bottom: 0;
+  }
+  &:before,
+  &:after {
+    position: absolute;
+    @include pseudoElement;
+    width: 0;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: width 0.6s ease-in-out;
+  }
+  &:hover {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    &:before,
+    &:after {
+      width: 100%;
     }
   }
 }
@@ -97,6 +133,7 @@ $num-of-tabs: 5;
     height: 56px;
     transition: color 0.2s ease;
     width: 100%;
+    font-size: 1.2em;
   }
 
   .slide {
@@ -143,4 +180,11 @@ $num-of-tabs: 5;
       }
     }
   }
+}
+
+// swiper
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: #f1b00f;
 }
