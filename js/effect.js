@@ -1,13 +1,15 @@
 // 스크롤시 헤더에 색상 클래스가 추가된다.
-window.addEventListener('scroll', function() {
-    const elementTarget = document.querySelector('#main');
-    if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
-        document.querySelector('#header').classList.add('on');
-    } else {
-        document.querySelector('#header').classList.remove('on');
-    }
-});
+// window.addEventListener('scroll', function() {
+//     const elementTarget = document.querySelector('#main');
+//     if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
+//         document.querySelector('#header').classList.add('on');
+//     } else {
+//         document.querySelector('#header').classList.remove('on');
+//     }
+// });
 
+
+// .depth1_title에 호버, 포커스시 각각의 .depth2가 노출
 
 
 const rollingWrap = document.querySelector('.rolling-box');

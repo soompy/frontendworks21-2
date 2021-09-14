@@ -188,3 +188,17 @@ $num-of-tabs: 5;
   .swiper-pagination-bullet {
   background-color: #f1b00f;
 }
+
+@media all and (max-width: 720px) {
+  .theme-button {
+    padding: 12px;
+    margin: 30px auto 0;
+    .button-text {
+      font-size: 1.1em;
+    }
+  }
+  .tab-wrap .tab-label-content .tab-content {
+    left: 0;
+    top: 70px;
+  }
+}
