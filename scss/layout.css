@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'flexCenter'.
-        on line 69 of C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\layout.scss, in `flexCenter'
-        from line 69 of C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\layout.scss
+        on line 71 of C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\layout.scss, in `flexCenter'
+        from line 71 of C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\layout.scss
 
-64:         transform: rotate(225deg);
-65:       }
-66:     }
-67: 
-68:     .hamburger {
-69:       @include flexCenter;
-70:       position: absolute;
-71:       top: 50%;
-72:       right: 3%;
-73:       z-index: 1;
-74:       transform: translateY(-50%);
+66:         transform: rotate(225deg);
+67:       }
+68:     }
+69: 
+70:     .hamburger {
+71:       @include flexCenter;
+72:       position: absolute;
+73:       top: 50%;
+74:       right: 3%;
+75:       z-index: 1;
+76:       transform: translateY(-50%);
 
 Backtrace:
-C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\layout.scss:69:in `flexCenter'
-C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\layout.scss:69
+C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\layout.scss:71:in `flexCenter'
+C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\layout.scss:71
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -88,4 +88,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'flexCenter'.\A         on line 69 of C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\layout.scss, in `flexCenter'\A         from line 69 of C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\layout.scss\A \A 64:         transform: rotate(225deg);\A 65:       }\A 66:     }\A 67: \A 68:     .hamburger {\A 69:       @include flexCenter;\A 70:       position: absolute;\A 71:       top: 50%;\A 72:       right: 3%;\A 73:       z-index: 1;\A 74:       transform: translateY(-50%);"; }
+  content: "Error: Undefined mixin 'flexCenter'.\A         on line 71 of C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\layout.scss, in `flexCenter'\A         from line 71 of C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\layout.scss\A \A 66:         transform: rotate(225deg);\A 67:       }\A 68:     }\A 69: \A 70:     .hamburger {\A 71:       @include flexCenter;\A 72:       position: absolute;\A 73:       top: 50%;\A 74:       right: 3%;\A 75:       z-index: 1;\A 76:       transform: translateY(-50%);"; }

@@ -10,10 +10,12 @@ body {
   position: fixed;
   z-index: 10;
   height: 80px;
-  background: white;
-  box-shadow: 0 1px 24px 0 #999999;
+  color: white;
   .menu {
     margin-right: 32px;
+    a {
+      color: white;
+    }
   }
 
   .outer-menu {
@@ -163,18 +165,22 @@ body {
           transform: translateY(-50%);
           ul {
             width: 86%;
-            li {
+            .depth1_title {
               display: flex;
               position: relative;
               width: 100%;
               margin-bottom: 20px;
-              .depth1_title {
-                display: block;
-                font-size: 24px;
-                font-weight: bold;
-                text-align: left;
+              display: block;
+              font-size: 24px;
+              font-weight: bold;
+              text-align: left;
+              &:hover, &:focus {
+                .depth2 {
+                  display: block;
+                }
               }
               .depth2 {
+                display: none;
                 position: absolute;
                 top: 0;
                 left: 20%;
@@ -235,6 +241,14 @@ body {
           }
         }
       }
+    }
+  }
+
+  &.bg-header {
+    background: white;
+    box-shadow: 0 1px 24px 0 #999999;
+    .menu a {
+      color: #1a1a1a;
     }
   }
 }

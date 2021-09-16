@@ -1,17 +1,33 @@
 // 스크롤시 헤더에 색상 클래스가 추가된다.
-// window.addEventListener('scroll', function() {
-//     const elementTarget = document.querySelector('#main');
-//     if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
-//         document.querySelector('#header').classList.add('on');
-//     } else {
-//         document.querySelector('#header').classList.remove('on');
-//     }
-// });
+let scrollpos = window.scrollY
+const header = document.querySelector("header")
+const header_height = header.offsetHeight
 
+const add_class_on_scroll = () => header.classList.add("bg-header")
+const remove_class_on_scroll = () => header.classList.remove("bg-header")
+
+window.addEventListener('scroll', function() {
+    scrollpos = window.scrollY;
+
+    if (scrollpos > header_height) { add_class_on_scroll() }
+    else { remove_class_on_scroll() }
+
+    console.log(scrollpos)
+})
 
 // .depth1_title에 호버, 포커스시 각각의 .depth2가 노출
+const depth1Title = document.querySelectorAll('.depth1_title');
+function getClicked () {
+    this.classList.add('active');
+}
+function offClicked () {
+    this.classList.remove('active');
+}
+depth1Title.firstChild.classList.add('active');
+depth1Title.forEach(li => li.addEventListener('mouseover', getClicked));
+depth1Title.forEach(li => li.addEventListener('mouseout', offClicked));
 
-
+// 텍스트 반복 생성
 const rollingWrap = document.querySelector('.rolling-box');
 for (let i = 0; i < 20; i++) {
     const rollingText = document.createElement('span');

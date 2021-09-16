@@ -1026,11 +1026,11 @@ body {
   position: fixed;
   z-index: 10;
   height: 80px;
-  background: white;
-  -webkit-box-shadow: 0 1px 24px 0 #999999;
-          box-shadow: 0 1px 24px 0 #999999; }
+  color: white; }
   #header .menu {
     margin-right: 32px; }
+    #header .menu a {
+      color: white; }
   #header .outer-menu {
     width: 70px; }
     #header .outer-menu .checkbox-toggle {
@@ -1217,32 +1217,34 @@ body {
                   transform: translateY(-50%); }
           #header .sidemenu .sidemenu_container .menu_container .depth1 ul {
             width: 86%; }
-            #header .sidemenu .sidemenu_container .menu_container .depth1 ul li {
+            #header .sidemenu .sidemenu_container .menu_container .depth1 ul .depth1_title {
               display: -webkit-box;
               display: -ms-flexbox;
               display: flex;
               position: relative;
               width: 100%;
-              margin-bottom: 20px; }
-              #header .sidemenu .sidemenu_container .menu_container .depth1 ul li .depth1_title {
-                display: block;
-                font-size: 24px;
-                font-weight: bold;
-                text-align: left; }
-              #header .sidemenu .sidemenu_container .menu_container .depth1 ul li .depth2 {
+              margin-bottom: 20px;
+              display: block;
+              font-size: 24px;
+              font-weight: bold;
+              text-align: left; }
+              #header .sidemenu .sidemenu_container .menu_container .depth1 ul .depth1_title:hover .depth2, #header .sidemenu .sidemenu_container .menu_container .depth1 ul .depth1_title:focus .depth2 {
+                display: block; }
+              #header .sidemenu .sidemenu_container .menu_container .depth1 ul .depth1_title .depth2 {
+                display: none;
                 position: absolute;
                 top: 0;
                 left: 20%;
                 width: 50%; }
-                #header .sidemenu .sidemenu_container .menu_container .depth1 ul li .depth2 ul {
+                #header .sidemenu .sidemenu_container .menu_container .depth1 ul .depth1_title .depth2 ul {
                   font-size: 16px; }
-                  #header .sidemenu .sidemenu_container .menu_container .depth1 ul li .depth2 ul li {
+                  #header .sidemenu .sidemenu_container .menu_container .depth1 ul .depth1_title .depth2 ul li {
                     margin-bottom: 18px; }
-                    #header .sidemenu .sidemenu_container .menu_container .depth1 ul li .depth2 ul li a {
+                    #header .sidemenu .sidemenu_container .menu_container .depth1 ul .depth1_title .depth2 ul li a {
                       display: block;
                       font-size: 18px;
                       font-weight: 500; }
-              #header .sidemenu .sidemenu_container .menu_container .depth1 ul li .menu-visual {
+              #header .sidemenu .sidemenu_container .menu_container .depth1 ul .depth1_title .menu-visual {
                 position: fixed;
                 right: 0;
                 top: 0;
@@ -1251,18 +1253,24 @@ body {
                 background-position: center center;
                 background-repeat: no-repeat;
                 background-size: cover; }
-              #header .sidemenu .sidemenu_container .menu_container .depth1 ul li:nth-child(1) .menu-visual {
+              #header .sidemenu .sidemenu_container .menu_container .depth1 ul .depth1_title:nth-child(1) .menu-visual {
                 background-image: url("https://www.cj.co.kr/resources/img/about/aboutus_01.jpg"); }
-              #header .sidemenu .sidemenu_container .menu_container .depth1 ul li:nth-child(2) .menu-visual {
+              #header .sidemenu .sidemenu_container .menu_container .depth1 ul .depth1_title:nth-child(2) .menu-visual {
                 background-image: url("https://www.cj.co.kr/cj_files/kfood/visual/201911/1574744264999_0.jpg"); }
-              #header .sidemenu .sidemenu_container .menu_container .depth1 ul li:nth-child(3) .menu-visual {
+              #header .sidemenu .sidemenu_container .menu_container .depth1 ul .depth1_title:nth-child(3) .menu-visual {
                 background-image: url("https://www.cj.co.kr/resources/img/visual/innovation_open.jpg"); }
-              #header .sidemenu .sidemenu_container .menu_container .depth1 ul li:nth-child(4) .menu-visual {
+              #header .sidemenu .sidemenu_container .menu_container .depth1 ul .depth1_title:nth-child(4) .menu-visual {
                 background-image: url("https://www.cj.co.kr/resources/img/kfoodlife/kitchen_introduce_11.jpg"); }
-              #header .sidemenu .sidemenu_container .menu_container .depth1 ul li:nth-child(5) .menu-visual {
+              #header .sidemenu .sidemenu_container .menu_container .depth1 ul .depth1_title:nth-child(5) .menu-visual {
                 background-image: url("https://www.cj.co.kr/resources/img/kfoodlife/kitchen_introduce_01.jpg"); }
-              #header .sidemenu .sidemenu_container .menu_container .depth1 ul li:nth-child(6) .menu-visual {
+              #header .sidemenu .sidemenu_container .menu_container .depth1 ul .depth1_title:nth-child(6) .menu-visual {
                 background-image: url("http://tong.visitkorea.or.kr/cms/resource/33/2617333_image2_1.jpg"); }
+  #header.bg-header {
+    background: white;
+    -webkit-box-shadow: 0 1px 24px 0 #999999;
+            box-shadow: 0 1px 24px 0 #999999; }
+    #header.bg-header .menu a {
+      color: #1a1a1a; }
 
 #header,
 #footer {
