@@ -15,6 +15,16 @@ window.addEventListener('scroll', function() {
     console.log(scrollpos)
 })
 
+
+// 텍스트 반복 생성
+const rollingWrap = document.querySelector('.rolling-box');
+for (let i = 0; i < 20; i++) {
+    const rollingText = document.createElement('span');
+    rollingWrap.appendChild(rollingText);
+    rollingText.innerText = "세계인의 사랑을 받는 글로벌 기업으로 나아갑니다";
+}
+
+
 // .depth1_title에 호버, 포커스시 각각의 .depth2가 노출
 const depth1Title = document.querySelectorAll('.depth1_title');
 function getClicked () {
@@ -27,13 +37,6 @@ depth1Title.firstChild.classList.add('active');
 depth1Title.forEach(li => li.addEventListener('mouseover', getClicked));
 depth1Title.forEach(li => li.addEventListener('mouseout', offClicked));
 
-// 텍스트 반복 생성
-const rollingWrap = document.querySelector('.rolling-box');
-for (let i = 0; i < 20; i++) {
-    const rollingText = document.createElement('span');
-    rollingWrap.appendChild(rollingText);
-    rollingText.innerText = "세계인의 사랑을 받는 글로벌 기업으로 나아갑니다";
-}
 
 
 
@@ -46,7 +49,6 @@ for (let i = 0; i < 20; i++) {
 //
 // let arr = ["bg-01", "bg-02", "bg-03"];
 
-
 // bgItem.classList.add('currentClass');
 // for(i = 0; i < bgItem.length; i++) {
 //     historyList[i].onmouseover(function () {
@@ -54,14 +56,20 @@ for (let i = 0; i < 20; i++) {
 //     })
 // }
 
-Array.from({length}, (v, i) => {
-    const historyList = document.querySelector('.history-item');
-    const bgItem = document.querySelector('.bg > div');
-    bgItem.className = `bg-0${i}`;
-    historyList.addEventListener('onmouseover', (event) => {
-        bgItem.classList.add(`bg-0${i}`);
-    })
-})
-
-
-
+// Array.from({length}, (v, i) => {
+//     const historyList = document.querySelector('.history-item');
+//     const bgItem = document.querySelector('.bg > div');
+//     bgItem.className = `bg-0${i}`;
+//     historyList.addEventListener('onmouseover', (event) => {
+//         bgItem.classList.add(`bg-0${i}`);
+//     })
+// })
+const elementsArr = ['bg-01', 'bg-02', 'bg-03'];
+const historyItem = document.querySelector('.history-item');
+const historyBg = document.querySelector('.history-bg');
+historyItem.addEventListener('mouseover', (e) => {
+    historyBg.classList.add('bg-03')
+});
+// foreach
+// https://yuddomack.tistory.com/entry/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Array-forEach
+// https://bigtop.tistory.com/58

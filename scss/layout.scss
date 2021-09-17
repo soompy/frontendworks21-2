@@ -6,6 +6,13 @@ body {
   overflow-x: hidden;
 }
 
+.not_scroll{
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100%
+}
+
 #header {
   position: fixed;
   z-index: 10;
@@ -47,6 +54,7 @@ body {
           pointer-events: auto;
           visibility: visible;
           .inner_wrap {
+            visibility: visible;
             transform: scale(1);
             transition-duration: 0.75s;
             .inner_content {
@@ -117,6 +125,7 @@ body {
       backface-visibility: hidden;
       outline: 1px solid transparent;
       > .inner_wrap {
+        visibility: hidden;
         @include flexCenter;
         width: 200vw;
         height: 200vw;

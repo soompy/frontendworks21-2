@@ -536,29 +536,23 @@ figure {
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%; }
-    .about-history .bg div {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      -webkit-transition: all 0.3s;
-      transition: all 0.3s;
-      z-index: 5; }
-      .about-history .bg div.bg-01 {
-        background-image: url("https://www.cj.co.kr/resources/img/visual/brands_submain.jpg"); }
-      .about-history .bg div.bg-02 {
-        background-image: url("https://www.cj.co.kr/resources/img/visual/about_overview.jpg"); }
-      .about-history .bg div.bg-03 {
-        background-image: url("https://www.cj.co.kr/resources/img/innovation/food_research.jpg"); }
-      .about-history .bg div:hover {
-        -webkit-filter: blur(5px);
-                filter: blur(5px); }
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: 5; }
+    .about-history .bg.bg-01 {
+      background-image: url("https://www.cj.co.kr/resources/img/visual/brands_submain.jpg"); }
+    .about-history .bg.bg-02 {
+      background-image: url("https://www.cj.co.kr/resources/img/visual/about_overview.jpg"); }
+    .about-history .bg.bg-03 {
+      background-image: url("https://www.cj.co.kr/resources/img/innovation/food_research.jpg"); }
+    .about-history .bg:hover {
+      -webkit-filter: blur(5px);
+              filter: blur(5px); }
   .about-history .history-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1022,6 +1016,12 @@ html {
 body {
   overflow-x: hidden; }
 
+.not_scroll {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100%; }
+
 #header {
   position: fixed;
   z-index: 10;
@@ -1054,6 +1054,7 @@ body {
         pointer-events: auto;
         visibility: visible; }
         #header .outer-menu .checkbox-toggle:checked ~ .sidemenu_container .inner_wrap {
+          visibility: visible;
           -webkit-transform: scale(1);
                   transform: scale(1);
           -webkit-transition-duration: 0.75s;
@@ -1139,6 +1140,7 @@ body {
               backface-visibility: hidden;
       outline: 1px solid transparent; }
       #header .outer-menu .sidemenu_container > .inner_wrap {
+        visibility: hidden;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -2598,29 +2600,23 @@ body {
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%; }
-    .about-history .bg div {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      -webkit-transition: all 0.3s;
-      transition: all 0.3s;
-      z-index: 5; }
-      .about-history .bg div.bg-01 {
-        background-image: url("https://www.cj.co.kr/resources/img/visual/brands_submain.jpg"); }
-      .about-history .bg div.bg-02 {
-        background-image: url("https://www.cj.co.kr/resources/img/visual/about_overview.jpg"); }
-      .about-history .bg div.bg-03 {
-        background-image: url("https://www.cj.co.kr/resources/img/innovation/food_research.jpg"); }
-      .about-history .bg div:hover {
-        -webkit-filter: blur(5px);
-                filter: blur(5px); }
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: 5; }
+    .about-history .bg.bg-01 {
+      background-image: url("https://www.cj.co.kr/resources/img/visual/brands_submain.jpg"); }
+    .about-history .bg.bg-02 {
+      background-image: url("https://www.cj.co.kr/resources/img/visual/about_overview.jpg"); }
+    .about-history .bg.bg-03 {
+      background-image: url("https://www.cj.co.kr/resources/img/innovation/food_research.jpg"); }
+    .about-history .bg:hover {
+      -webkit-filter: blur(5px);
+              filter: blur(5px); }
   .about-history .history-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
