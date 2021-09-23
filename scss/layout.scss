@@ -15,6 +15,7 @@ body {
 
 #header {
   position: fixed;
+  top: 0;
   z-index: 10;
   height: 80px;
   color: white;
@@ -355,7 +356,7 @@ body {
         }
       }
       &:hover {
-        display: block;
+        display: flex;
         .dropdown_menu--animated {
           display: block;
         }
@@ -368,6 +369,7 @@ body {
   width: 100vw;
   height: 100vh;
   .visualSwiper {
+    overflow-x: hidden;
     height: 100%;
     .swiper-slide {
       position: relative;
@@ -410,6 +412,9 @@ body {
         }
       }
     }
+  }
+  .swiper-pagination {
+    z-index: 1 !important;
   }
 }
 
@@ -686,22 +691,24 @@ body {
     }
     .sidemenu {
       width: 50px;
+      height: 36px;
     }
     .lang {
       .depth {
         font-size: 1em;
-        padding: 3px 6px;
+        padding: 6px;
       }
     }
     .outer-menu {
       width: 50px;
       .checkbox-toggle {
-        width: 30px;
-        height: 30px;
+        width: 36px;
+        height: 36px;
+        margin-left: 14px;
       }
       .hamburger {
-        width: 10px;
-        height: 10px;
+        width: 16px;
+        height: 16px;
       }
     }
   }

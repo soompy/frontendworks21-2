@@ -215,7 +215,7 @@
     max-width: 100vw;
     width: 100%;
     transition: all 0.5s linear;
-    animation: slide-right 15s infinite;
+    animation: slide-right 50s infinite;
     transform: translateX(0);
     span {
       display: inline-block;
@@ -555,6 +555,22 @@
 @media all and (max-width: 500px) {
   .about-history .history-wrap {
     flex-direction: column;
+    .history-bg {
+
+    }
+    .history-item {
+      a {
+        .big-text {
+          @include flexCenter;
+          width: 100%;
+          height: 100%;
+          font-size: 5em;
+        }
+        .txt {
+          width: 100%;
+        }
+      }
+    }
   }
   .area-brands {
     display: none;
