@@ -41,7 +41,7 @@ depth1Title.forEach(li => li.addEventListener('mouseout', offClicked));
 
 
 /*
-* (1~3번째 ) .history-item에 호버 시 .bg > div에 bg bg-01 ~ 03클래스 넣어주기
+* (1~3번째 ) .history-item에 호버 시 .history-bg에 bg bg-01 ~ 03클래스 넣어주기
 * 필요한 것 .history-item 인덱스
 *
 * */
@@ -64,12 +64,38 @@ depth1Title.forEach(li => li.addEventListener('mouseout', offClicked));
 //         bgItem.classList.add(`bg-0${i}`);
 //     })
 // })
-const elementsArr = ['bg-01', 'bg-02', 'bg-03'];
-const historyItem = document.querySelector('.history-item');
-const historyBg = document.querySelector('.history-bg');
-historyItem.addEventListener('mouseover', (e) => {
-    historyBg.classList.add('bg-03')
-});
+
+
+// Array.from({length}, (v, i) => {
+//     const historyBg = document.querySelector('.history-bg > div');
+//     const historyItem = document.querySelector('.history-item');
+//     historyBg.className = `bg-0${i}`;
+//     historyItem.addEventListener('onmouseover', (event) => {
+//         bgItem.classList.add(`bg-0${i}`);
+//     })
+// })
+
+
+
+const bg1 = document.querySelector('.bgs01');
+const bg2 = document.querySelector('.bgs02');
+const bg3 = document.querySelector('.bgs03');
+
+const historyBg1 = document.querySelector('.bg01');
+const historyBg2 = document.querySelector('.bg02');
+const historyBg3 = document.querySelector('.bg03');
+
+bg1.addEventListener('mouseover', (e) => {
+    historyBg1.classList.toggle('show');
+})
+bg2.addEventListener('mouseover', (e) => {
+    historyBg2.classList.toggle('show');
+})
+bg3.addEventListener('mouseover', (e) => {
+    historyBg3.classList.toggle('show');
+})
+
+
 // foreach
 // https://yuddomack.tistory.com/entry/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Array-forEach
 // https://bigtop.tistory.com/58

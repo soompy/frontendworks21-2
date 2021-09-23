@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$colors".
-        on line 2 of C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\colors.scss
+        on line 2 of C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21_cj\scss\colors.scss
 
 1: 
 2: @each $color, $value in $colors {
@@ -11,7 +11,7 @@ Error: Undefined variable: "$colors".
 7:    background-color: #{$value};
 
 Backtrace:
-C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\colors.scss:2
+C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21_cj\scss\colors.scss:2
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:233:in `visit_each'
@@ -47,4 +47,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$colors\".\A         on line 2 of C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\colors.scss\A \A 1: \A 2: @each $color, $value in $colors {\A 3:  .fc-#{$color}{\A 4:    color: #{$value};\A 5:  }\A 6:  .bg-#{$color}{\A 7:    background-color: #{$value};"; }
+  content: "Error: Undefined variable: \"$colors\".\A         on line 2 of C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21_cj\scss\colors.scss\A \A 1: \A 2: @each $color, $value in $colors {\A 3:  .fc-#{$color}{\A 4:    color: #{$value};\A 5:  }\A 6:  .bg-#{$color}{\A 7:    background-color: #{$value};"; }

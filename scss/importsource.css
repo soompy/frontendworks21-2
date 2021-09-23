@@ -531,28 +531,6 @@ figure {
     font-weight: bold;
     text-transform: uppercase;
     opacity: 0.5; }
-  .about-history .bg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    z-index: 5; }
-    .about-history .bg.bg-01 {
-      background-image: url("https://www.cj.co.kr/resources/img/visual/brands_submain.jpg"); }
-    .about-history .bg.bg-02 {
-      background-image: url("https://www.cj.co.kr/resources/img/visual/about_overview.jpg"); }
-    .about-history .bg.bg-03 {
-      background-image: url("https://www.cj.co.kr/resources/img/innovation/food_research.jpg"); }
-    .about-history .bg:hover {
-      -webkit-filter: blur(5px);
-              filter: blur(5px); }
   .about-history .history-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -566,7 +544,30 @@ figure {
     position: relative;
     height: 100%;
     z-index: 5; }
-    .about-history .history-wrap li {
+    .about-history .history-wrap .history-bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100vh; }
+      .about-history .history-wrap .history-bg > div {
+        display: none;
+        height: 100%;
+        -webkit-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed; }
+        .about-history .history-wrap .history-bg > div.bg01 {
+          background-image: url("https://www.cj.co.kr/resources/img/visual/brands_submain.jpg"); }
+        .about-history .history-wrap .history-bg > div.bg02 {
+          background-image: url("https://www.cj.co.kr/resources/img/visual/about_overview.jpg"); }
+        .about-history .history-wrap .history-bg > div.bg03 {
+          background-image: url("https://www.cj.co.kr/resources/img/innovation/food_research.jpg"); }
+        .about-history .history-wrap .history-bg > div.show {
+          display: block; }
+    .about-history .history-wrap .history-item {
       -webkit-box-flex: 1;
           -ms-flex: 1;
               flex: 1;
@@ -574,7 +575,7 @@ figure {
       top: 0;
       width: 100%;
       height: 100%; }
-      .about-history .history-wrap li a {
+      .about-history .history-wrap .history-item a {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -591,7 +592,7 @@ figure {
         position: relative;
         height: 100%;
         color: white; }
-        .about-history .history-wrap li a > strong {
+        .about-history .history-wrap .history-item a .big-text {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -609,34 +610,51 @@ figure {
           width: 80%;
           height: 100vh;
           font-size: 12em;
-          color: #444444;
-          opacity: 0.5;
-          background: #1a1a1a;
-          display: none; }
-        .about-history .history-wrap li a .txt {
+          color: white;
+          opacity: 0.3;
+          -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out; }
+        .about-history .history-wrap .history-item a .txt {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          visibility: hidden;
           position: relative;
+          width: 80%;
+          height: 100%;
           top: 0;
-          -webkit-transition: all 0.7s ease-in-out;
-          transition: all 0.7s ease-in-out; }
-          .about-history .history-wrap li a .txt div p {
+          opacity: 0.7;
+          background: rgba(0, 0, 0, 0.4);
+          text-shadow: 2px 4px 20px #000; }
+          .about-history .history-wrap .history-item a .txt div p {
             font-size: 2.4em;
             font-weight: bold; }
-          .about-history .history-wrap li a .txt div span {
+          .about-history .history-wrap .history-item a .txt div span {
             overflow: hidden;
             display: none;
             font-size: 1.2em;
             margin: 14px 20px;
             line-height: 1.6em; }
-          .about-history .history-wrap li a .txt div button {
+          .about-history .history-wrap .history-item a .txt div button {
             margin-top: 10px; }
-            .about-history .history-wrap li a .txt div button strong {
+            .about-history .history-wrap .history-item a .txt div button strong {
               font-size: 1em;
               color: white; }
-        .about-history .history-wrap li a:hover > strong {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex; }
-        .about-history .history-wrap li a:hover .txt span {
+      .about-history .history-wrap .history-item:hover .big-text {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-filter: blur(5px);
+                filter: blur(5px); }
+      .about-history .history-wrap .history-item:hover .txt {
+        visibility: visible; }
+        .about-history .history-wrap .history-item:hover .txt span {
           display: block; }
 
 .area-global {
@@ -1090,7 +1108,7 @@ body {
       height: 30px;
       padding: 10px;
       background: #ef151e;
-      border-radius: 10px 10px 0;
+      border-radius: 10px;
       cursor: pointer;
       -webkit-transition: -webkit-box-shadow 0.4s ease;
       transition: -webkit-box-shadow 0.4s ease;
@@ -2595,28 +2613,6 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     opacity: 0.5; }
-  .about-history .bg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    z-index: 5; }
-    .about-history .bg.bg-01 {
-      background-image: url("https://www.cj.co.kr/resources/img/visual/brands_submain.jpg"); }
-    .about-history .bg.bg-02 {
-      background-image: url("https://www.cj.co.kr/resources/img/visual/about_overview.jpg"); }
-    .about-history .bg.bg-03 {
-      background-image: url("https://www.cj.co.kr/resources/img/innovation/food_research.jpg"); }
-    .about-history .bg:hover {
-      -webkit-filter: blur(5px);
-              filter: blur(5px); }
   .about-history .history-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2630,7 +2626,30 @@ body {
     position: relative;
     height: 100%;
     z-index: 5; }
-    .about-history .history-wrap li {
+    .about-history .history-wrap .history-bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100vh; }
+      .about-history .history-wrap .history-bg > div {
+        display: none;
+        height: 100%;
+        -webkit-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed; }
+        .about-history .history-wrap .history-bg > div.bg01 {
+          background-image: url("https://www.cj.co.kr/resources/img/visual/brands_submain.jpg"); }
+        .about-history .history-wrap .history-bg > div.bg02 {
+          background-image: url("https://www.cj.co.kr/resources/img/visual/about_overview.jpg"); }
+        .about-history .history-wrap .history-bg > div.bg03 {
+          background-image: url("https://www.cj.co.kr/resources/img/innovation/food_research.jpg"); }
+        .about-history .history-wrap .history-bg > div.show {
+          display: block; }
+    .about-history .history-wrap .history-item {
       -webkit-box-flex: 1;
           -ms-flex: 1;
               flex: 1;
@@ -2638,7 +2657,7 @@ body {
       top: 0;
       width: 100%;
       height: 100%; }
-      .about-history .history-wrap li a {
+      .about-history .history-wrap .history-item a {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -2655,7 +2674,7 @@ body {
         position: relative;
         height: 100%;
         color: white; }
-        .about-history .history-wrap li a > strong {
+        .about-history .history-wrap .history-item a .big-text {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -2673,34 +2692,51 @@ body {
           width: 80%;
           height: 100vh;
           font-size: 12em;
-          color: #444444;
-          opacity: 0.5;
-          background: #1a1a1a;
-          display: none; }
-        .about-history .history-wrap li a .txt {
+          color: white;
+          opacity: 0.3;
+          -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out; }
+        .about-history .history-wrap .history-item a .txt {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          visibility: hidden;
           position: relative;
+          width: 80%;
+          height: 100%;
           top: 0;
-          -webkit-transition: all 0.7s ease-in-out;
-          transition: all 0.7s ease-in-out; }
-          .about-history .history-wrap li a .txt div p {
+          opacity: 0.7;
+          background: rgba(0, 0, 0, 0.4);
+          text-shadow: 2px 4px 20px #000; }
+          .about-history .history-wrap .history-item a .txt div p {
             font-size: 2.4em;
             font-weight: bold; }
-          .about-history .history-wrap li a .txt div span {
+          .about-history .history-wrap .history-item a .txt div span {
             overflow: hidden;
             display: none;
             font-size: 1.2em;
             margin: 14px 20px;
             line-height: 1.6em; }
-          .about-history .history-wrap li a .txt div button {
+          .about-history .history-wrap .history-item a .txt div button {
             margin-top: 10px; }
-            .about-history .history-wrap li a .txt div button strong {
+            .about-history .history-wrap .history-item a .txt div button strong {
               font-size: 1em;
               color: white; }
-        .about-history .history-wrap li a:hover > strong {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex; }
-        .about-history .history-wrap li a:hover .txt span {
+      .about-history .history-wrap .history-item:hover .big-text {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-filter: blur(5px);
+                filter: blur(5px); }
+      .about-history .history-wrap .history-item:hover .txt {
+        visibility: visible; }
+        .about-history .history-wrap .history-item:hover .txt span {
           display: block; }
 
 .area-global {

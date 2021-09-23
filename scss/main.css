@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'flexCenter'.
-        on line 32 of C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\main.scss, in `flexCenter'
-        from line 32 of C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\main.scss
+        on line 32 of C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21_cj\scss\main.scss, in `flexCenter'
+        from line 32 of C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21_cj\scss\main.scss
 
 27:     text-align: center;
 28:   }
@@ -16,8 +16,8 @@ Error: Undefined mixin 'flexCenter'.
 37:   left: 0;
 
 Backtrace:
-C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\main.scss:32:in `flexCenter'
-C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\main.scss:32
+C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21_cj\scss\main.scss:32:in `flexCenter'
+C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21_cj\scss\main.scss:32
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'flexCenter'.\A         on line 32 of C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\main.scss, in `flexCenter'\A         from line 32 of C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21-2\scss\main.scss\A \A 27:     text-align: center;\A 28:   }\A 29: }\A 30: \A 31: .flip-text-animation {\A 32:   @include flexCenter;\A 33:   color: #999;\A 34:   font-size: 2em;\A 35:   font-weight: bold;\A 36:   //position: relative;\A 37:   left: 0;"; }
+  content: "Error: Undefined mixin 'flexCenter'.\A         on line 32 of C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21_cj\scss\main.scss, in `flexCenter'\A         from line 32 of C:\Users\SMART-TD-014\Desktop\cli-24\frontendworks21_cj\scss\main.scss\A \A 27:     text-align: center;\A 28:   }\A 29: }\A 30: \A 31: .flip-text-animation {\A 32:   @include flexCenter;\A 33:   color: #999;\A 34:   font-size: 2em;\A 35:   font-weight: bold;\A 36:   //position: relative;\A 37:   left: 0;"; }

@@ -100,37 +100,40 @@
     text-transform: uppercase;
     opacity: 0.5;
   }
-  .bg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    transition: all 0.3s;
-    z-index: 5;
-    &.bg-01 {
-      background-image: url("https://www.cj.co.kr/resources/img/visual/brands_submain.jpg");
-    }
-    &.bg-02 {
-      background-image: url("https://www.cj.co.kr/resources/img/visual/about_overview.jpg");
-    }
-    &.bg-03 {
-      background-image: url("https://www.cj.co.kr/resources/img/innovation/food_research.jpg");
-    }
-    &:hover {
-      filter: blur(5px);
-    }
-  }
   .history-wrap {
     @include flexCenter;
     position: relative;
     height: 100%;
     z-index: 5;
-    li {
+    .history-bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      > div {
+        display: none;
+        height: 100%;
+        transition: all 0.7s ease-in-out;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        &.bg01 {
+          background-image: url("https://www.cj.co.kr/resources/img/visual/brands_submain.jpg");
+        }
+        &.bg02 {
+          background-image: url("https://www.cj.co.kr/resources/img/visual/about_overview.jpg");
+        }
+        &.bg03 {
+          background-image: url("https://www.cj.co.kr/resources/img/innovation/food_research.jpg");
+        }
+        &.show {
+          display: block;
+        }
+      }
+    }
+    .history-item {
       flex: 1;
       position: relative;
       top: 0;
@@ -142,7 +145,7 @@
         position: relative;
         height: 100%;
         color: white;
-        > strong {
+        .big-text {
           @include flexCenter;
           position: absolute;
           left: 50%;
@@ -151,15 +154,20 @@
           width: 80%;
           height: 100vh;
           font-size: 12em;
-          color: #444444;
-          opacity: 0.5;
-          background: #1a1a1a;
-          display: none;
+          color: white;
+          opacity: 0.3;
+          transition: all 0.2s ease-in-out;
         }
         .txt {
+          @include flexCenter;
+          visibility: hidden;
           position: relative;
+          width: 80%;
+          height: 100%;
           top: 0;
-          transition: all 0.7s ease-in-out;
+          opacity: 0.7;
+          background: rgba(0, 0, 0, 0.4);
+          text-shadow: 2px 4px 20px #000;
           div {
             p {
               font-size: 2.4em;
@@ -181,20 +189,24 @@
             }
           }
         }
-        &:hover {
-          > strong {
-            display: flex;
-          }
-          .txt {
-            span {
-              display: block;
-            }
+      }
+      &:hover {
+        .big-text {
+          display: flex;
+          filter: blur(5px);
+        }
+        .txt {
+          visibility: visible;
+          span {
+            display: block;
           }
         }
       }
     }
   }
 }
+
+
 
 .area-global {
   overflow: hidden;
