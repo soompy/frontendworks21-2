@@ -33,7 +33,7 @@ function getClicked () {
 function offClicked () {
     this.classList.remove('active');
 }
-depth1Title.firstChild.classList.add('active');
+// depth1Title.firstChild.classList.add('active');
 depth1Title.forEach(li => li.addEventListener('mouseover', getClicked));
 depth1Title.forEach(li => li.addEventListener('mouseout', offClicked));
 
@@ -46,35 +46,10 @@ depth1Title.forEach(li => li.addEventListener('mouseout', offClicked));
 *
 * */
 
-//
-// let arr = ["bg-01", "bg-02", "bg-03"];
-
-// bgItem.classList.add('currentClass');
-// for(i = 0; i < bgItem.length; i++) {
-//     historyList[i].onmouseover(function () {
-//         bgItem.classList.add('bg-0${i}');
-//     })
-// }
-
-// Array.from({length}, (v, i) => {
-//     const historyList = document.querySelector('.history-item');
-//     const bgItem = document.querySelector('.bg > div');
-//     bgItem.className = `bg-0${i}`;
-//     historyList.addEventListener('onmouseover', (event) => {
-//         bgItem.classList.add(`bg-0${i}`);
-//     })
-// })
-
-
-// Array.from({length}, (v, i) => {
-//     const historyBg = document.querySelector('.history-bg > div');
-//     const historyItem = document.querySelector('.history-item');
-//     historyBg.className = `bg-0${i}`;
-//     historyItem.addEventListener('onmouseover', (event) => {
-//         bgItem.classList.add(`bg-0${i}`);
-//     })
-// })
-
+/*
+* .bgs1 .bgs2 .bgs3에 마우스오버 시 .bg01 .bg02 .bg03에 show클래스 넣어주기 마우스아웃 시 show 클래스 제거,
+  처음 상태는 .bg01에 show 클래스가 들어가 있는 상태
+*/
 
 
 const bg1 = document.querySelector('.bgs01');
@@ -85,16 +60,53 @@ const historyBg1 = document.querySelector('.bg01');
 const historyBg2 = document.querySelector('.bg02');
 const historyBg3 = document.querySelector('.bg03');
 
+
+
 bg1.addEventListener('mouseover', (e) => {
-    historyBg1.classList.toggle('show');
+    historyBg1.classList.add('show');
 })
 bg2.addEventListener('mouseover', (e) => {
-    historyBg2.classList.toggle('show');
+    historyBg2.classList.add('show');
 })
 bg3.addEventListener('mouseover', (e) => {
-    historyBg3.classList.toggle('show');
+    historyBg3.classList.add('show');
 })
 
+bg1.addEventListener('mouseout', (e) => {
+    historyBg1.classList.remove('show');
+})
+bg2.addEventListener('mouseout', (e) => {
+    historyBg2.classList.remove('show');
+})
+bg3.addEventListener('mouseout', (e) => {
+    historyBg3.classList.remove('show');
+})
+
+
+// const imgBg = document.querySelectorAll('.imgBg');
+// const item = document.querySelectorAll('.history-item');
+
+// for(var i = 0; i < item.length; i++){
+//     item[i].addEventListener('mouseover', function(event) {
+//       imgBg[i].classList.add('show');
+//     });
+// }
+
+
+// for(var i = 0; i < item.length; i++){
+//     item[i].addEventListener('mouseout', function(event) {
+//       imgBg[i].classList.remove('show');
+//     });
+// }
+
+// var listItems = document.querySelectorAll('.history-item');
+// var img = document.querySelectorAll('.imgBg');
+
+// for(var i = 0; i < listItems.length; i++){
+//     listItems[i].addEventListener('click', function(event) {
+//       img[i].classList.toggle('show');
+//     });
+// }
 
 // foreach
 // https://yuddomack.tistory.com/entry/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Array-forEach

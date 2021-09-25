@@ -111,7 +111,7 @@
       top: 0;
       width: 100%;
       height: 100vh;
-      > div {
+      .imgBg {
         display: none;
         height: 100%;
         transition: all 0.7s ease-in-out;
@@ -205,8 +205,6 @@
     }
   }
 }
-
-
 
 .area-global {
   overflow: hidden;
@@ -556,7 +554,6 @@
   .about-history .history-wrap {
     flex-direction: column;
     .history-bg {
-
     }
     .history-item {
       a {
