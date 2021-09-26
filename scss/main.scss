@@ -105,6 +105,16 @@
     position: relative;
     height: 100%;
     z-index: 5;
+    .cover {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      background: url("https://www.cj.co.kr/resources/img/visual/brands_submain.jpg")
+        center center no-repeat;
+      background-size: cover;
+    }
     .history-bg {
       position: absolute;
       left: 0;
@@ -550,11 +560,15 @@
   }
 }
 
+@media all and (max-width: 1400px) {
+  .about-history .history-wrap .history-item a .big-text {
+    font-size: 6em;
+  }
+}
+
 @media all and (max-width: 500px) {
   .about-history .history-wrap {
     flex-direction: column;
-    .history-bg {
-    }
     .history-item {
       a {
         .big-text {
