@@ -1,4 +1,2 @@
-# frontendworks21-2
-CSS EFFECT https://www.creativosonline.org/ko/33-efectos-imagen-css-realmente-estimulantes.html
-
-https://www.hana-aamc.com/ko
+## CJ제일제당 페이지(반응형, 크롬 최적화)
+HTML, CSS(SCSS), Javascript
